@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('site.login');
+})->name('site.index');
+
+Route::get('/login', 'LoginController@viewLogin')->name('site.login');
+
+Route::prefix("/admin")->group( function(){
+
+
 });
