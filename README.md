@@ -1,7 +1,7 @@
 
-<p align="center">
-<img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status">
-</p>
+<h1 align="center">
+    LD2V
+</h1>
 
 ## Sobre o Projeto
 
