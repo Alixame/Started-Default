@@ -2,23 +2,41 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
+/**
+ * ROTA DO TIPO [GET]
+ * 
+ * RETORNA VIEW PRINCIPAL DO SISTEMA
+ * 
+ * @return view;
+ */
 Route::get('/', function () {
     return redirect()->route('site.login');
 })->name('site.index');
 
-Route::get('/login', 'LoginController@viewLogin')->name('site.login');
+/**
+ * ROTA DO TIPO [GET]
+ * 
+ * RETORNA VIEW DE LOGIN ADMINISTRATIVO DO SISTEMA
+ * 
+ * @return view;
+ */
+Route::get('/admin/login', 'LoginController@viewLogin')->name('site.login');
 
+/**
+ * ROTA DO TIPO [GET]
+ * 
+ * RETORNA VIEW DO PAINEL DE ADMINISTRAÇÃO
+ * 
+ * @return view;
+ */
+Route::get('/admin', function (){
+    return "Pagina admin";
+});
+
+
+/**
+ * AGRUPAMENTO DE ROTAS DO PAINEL DE ADMINISTRAÇÃO (TODAS AS ROTAS VÃO USAR O MESMO PREFIXO)
+ */
 Route::prefix("/admin")->group( function(){
 
 
