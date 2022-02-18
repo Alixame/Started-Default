@@ -29,9 +29,7 @@ Route::get('/admin/login', 'LoginController@viewLogin')->name('site.login');
  * 
  * @return view;
  */
-Route::get('/admin', function (){
-    return "Pagina admin";
-});
+Route::get('/admin', 'PainelController@viewPainel')->name('admin.painel');;
 
 
 /**
