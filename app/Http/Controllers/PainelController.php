@@ -8,7 +8,7 @@ class PainelController extends Controller
 {
     public function viewPainel(){
 
-        return view('site.admin.painel', ['titulo-pagina' => 'LD2V | Dashboard']);
+        return view('site.admin.painel');
 
     }
 }

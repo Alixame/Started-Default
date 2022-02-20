@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
  * @return view;
  */
 Route::get('/', function () {
-    return redirect()->route('site.login');
+    return redirect()->route('admin.login');
 })->name('site.index');
 
 /**
@@ -20,7 +20,7 @@ Route::get('/', function () {
  * 
  * @return view;
  */
-Route::get('/admin/login', 'LoginController@viewLogin')->name('site.login');
+Route::get('/admin/login', 'LoginController@viewLogin')->name('admin.login');
 
 /**
  * ROTA DO TIPO [GET]

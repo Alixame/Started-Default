@@ -13,6 +13,6 @@ class LoginController extends Controller
      * 
      */
     public function viewLogin() {
-        return view('site.login');
+        return view('site.admin.login');
     }
 }

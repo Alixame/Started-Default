@@ -1,5 +1,7 @@
 @extends('site.layout.layout-painel')
 
+@section('titulo-pagina','LD2V | Dashboard')
+
 @section('conteudo')
 
     <!-- Content Wrapper -->
