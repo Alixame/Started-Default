@@ -9,6 +9,6 @@ class PainelController extends Controller
     public function viewPainel(){
 
         return view('site.admin.painel');
-
+        
     }
 }
